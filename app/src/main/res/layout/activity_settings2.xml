@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    tools:context=".Settings">
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rummy Helper Settings"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"/>
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spnDeleteNames"
+        android:layout_marginTop="20dp"
+        android:onClick="gotoMain"
+        android:text="OK"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btnOk"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSelectStakes"
+        android:text="Select Stakes"
+        android:textColor="@color/colorPrimary"
+       app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSelectJackPots"
+        android:textColor="@color/colorPrimary"
+        android:text="Select Jackpots"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        android:layout_marginRight="20dp"/>
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnStakes"
+        app:layout_constraintRight_toRightOf="@id/txtSelectStakes"
+        app:layout_constraintTop_toBottomOf="@id/txtSelectJackPots"
+        android:layout_marginLeft="40dp"
+        android:dropDownSelector="@color/coloerRed"
+        />
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnJackpots"
+        app:layout_constraintRight_toRightOf="@id/txtSelectJackPots"
+        app:layout_constraintTop_toBottomOf="@id/txtSelectJackPots"
+        android:layout_marginRight="20dp"
+        />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/txtDelName"
+       android:text="Delete Hands"
+       android:textColor="@color/colorPrimary"
+       android:onClick="deleteHands"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnDeleteNames"
+        android:tooltipText="Select"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:addStatesFromChildren="false"
+        android:dropDownSelector="@drawable/ic_arrow_drop_up_black_24dp"
+        app:layout_constraintRight_toLeftOf="@id/txtDelName"
+        app:layout_constraintTop_toBottomOf="@id/txtDelName" />
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEnterHands"
+        app:layout_constraintTop_toBottomOf="@id/txtNewHand"
+        app:layout_constraintRight_toLeftOf="@id/btnOk" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Hand"
+        android:id="@+id/txtAddHand"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:textColor="@color/colorPrimary"
+        android:onClick="enterNames"
+        app:layout_constraintTop_toBottomOf="@id/txtNewHand"
+        app:layout_constraintLeft_toRightOf="@id/btnOk" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNewHand"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOk"
+        android:text="Enter New Hands"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNameToDelete"
+        app:layout_constraintTop_toBottomOf="@id/txtDelName"
+        app:layout_constraintLeft_toLeftOf="@id/txtDelName"
+        app:layout_constraintRight_toRightOf="parent"
+       android:layout_marginRight="10dp"
+        android:hint="hand to delete"/>
+    <TextView
+    android:id="@+id/showStakes"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+     android:text=""
+    app:layout_constraintLeft_toLeftOf="@id/spnStakes"
+    app:layout_constraintTop_toBottomOf="@id/spnStakes"/>
+    <TextView
+        android:id="@+id/showJackpots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/spnJackpots"
+        app:layout_constraintTop_toBottomOf="@id/spnJackpots"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

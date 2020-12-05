@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/mnuSettings"
+    app:showAsAction="always"
+    android:title="Setting">
+    <menu>
+        <item android:title="Jackpots">
+        <menu>
+            <item android:id="@+id/all"
+                android:title="All"/>
+            <item android:title="None"
+                android:id="@+id/none"/>
+            <item android:id="@+id/alternate"
+                android:title="Alternate"/>
+            <item android:id="@+id/firstlast"
+                android:title="First and Last"/>
+        </menu>
+        </item>
+        <item android:title="Stakes">
+            <menu>
+                <item android:title="0.1"
+                    android:id="@+id/pointOne"/>
+                <item android:id="@+id/pointFive"
+                    android:title="0.5"/>
+                <item android:title="1.0"
+                    android:id="@+id/one"/>
+                <item android:id="@+id/onePointFive"
+                    android:title="1.5"/>
+                <item android:title="2.0"
+                    android:id="@+id/two"/>
+            </menu>
+        </item>
+        <item android:title="Game Settings">
+            <menu>
+
+                <item android:id="@+id/defalt"
+                    android:title="Default"/>
+                <item android:title="current"
+                    android:id="@+id/crntSet"/>
+            </menu>
+        </item>
+
+    </menu>
+</item>
+</menu>

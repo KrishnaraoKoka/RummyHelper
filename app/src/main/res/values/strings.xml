@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Rhelper</string>
+    <string name="title_activity_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="name">myname</string>
+    <!-- Strings used for shared preferences -->
+    <string name="name_key">newname</string>
+    <string name="last_no">lastno</string>
+    <string name="new_name">nextname</string>
+    <string name="jackpot_key">jackpot key</string>
+    <string name="stakes_key">stakes</string>
+
+</resources>
