@@ -1,6 +1,6 @@
 package com.example.myrhelper
 
-import android.app.ProgressDialog.show
+import android.app.PendingIntent
 import android.content.DialogInterface
 import android.content.Intent
 import android.content.SharedPreferences
@@ -19,6 +19,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity() : AppCompatActivity(), Parcelable {
+
     private var PRIVATE_MODE = 0
     private val PREF_NAME = "KGK"
     var names: ArrayList<TextView> = arrayListOf()
@@ -28,7 +29,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     var winners: ArrayList<RadioButton> = arrayListOf()
     var points: ArrayList<EditText> = arrayListOf()
     var balences: ArrayList<TextView> = arrayListOf()
-    var stake: String? = ""
+    private var stake: String? = ""
     var jackpot: String? = ""
     var strNames: String? = ""
     val nameBalence = arrayOf(
@@ -37,7 +38,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     )
     val arrayList: MutableList<String> = ArrayList()
     val jpotArray = intArrayOf(1, 1, 1, 1, 1, 1, 1, 1, 1)
-    val arrangeName = Array<String>(9) { "" }
+    val arrangeName = Array(9) { "" }
     val arrangeBal = Array<String>(9) { "" }
     val selectedNames: MutableList<String> = ArrayList()
     var gameNo = 0
@@ -45,6 +46,8 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     var nameNo: Int = 0
     var blNo: Int = 0
     var roundOn: Boolean = false
+    var slNo =0
+   // var hNo =  getHandsNo()
 
     // val sharedPref: SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
     constructor(parcel: Parcel) : this() {
@@ -61,7 +64,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             editor.putInt("lastno", 0).commit()
         }
         findByids()
-
+        disableEditTexts()
         stake = sharedPref.getString(getString(R.string.stakes_key), "defvalue")
         jackpot = sharedPref.getString(getString(R.string.jackpot_key), "defvalue")
         fillNewHands()
@@ -104,7 +107,9 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         })
 
     }//onCreate
-
+    override fun onBackPressed() {
+        
+    }
     override fun writeToParcel(parcel: Parcel, flags: Int) {
     }
 
@@ -127,19 +132,23 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         return when (item.itemId) {
             R.id.all -> {
                 jackpot = "all"
+                setJackpots()
                 Toast.makeText(this, "$jackpot", Toast.LENGTH_LONG).show()
                 true
             }
             R.id.alternate -> {
-                jackpot= "alternate"
+                jackpot = "alternate"
+                setJackpots()
                 true
             }
             R.id.none -> {
-                jackpot= "none"
+                jackpot = "none"
+                setJackpots()
                 true
             }
             R.id.firstlast -> {
-                jackpot= "firstLast"
+                jackpot = "firstLast"
+                setJackpots()
                 true
             }
             R.id.pointOne -> {
@@ -166,7 +175,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
                 defaultSettings()
                 true
             }
-            R.id.crntSet ->{
+            R.id.crntSet -> {
                 currentSettings()
                 true
             }
@@ -184,27 +193,23 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             return arrayOfNulls(size)
         }
     }
-    fun onClickDeal(view: View){
-        for(i in 0 until getHandsNo()){
-            if(jackpots[i].isChecked) jpotArray[i]=2
-        }
-    }
+
 
     public fun selectWinner(view: View) {
-        for (i in 0..8)
-            points[i].isEnabled = true
-        for (i in 0..8)
+
+        for (i in 0 until getHandsNo())
             if (view.id != winners[i].id) {
                 winners[i].isChecked = false
+                points[i].isEnabled=true
             } else {
                 points[i].text.clear()
-                points[i].isEnabled = false
+                points[i].isEnabled=false
                 Winner = i
             }
     }
 
     fun alertDialogBuild(no: Int) {
-        if (roundOn) {
+        if (no>=gameNo) {
             Toast.makeText(
                 this, "You can't quit or re enter", Toast.LENGTH_LONG
             ).show()
@@ -239,6 +244,14 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         alertDialog.show()
     }
 
+    override fun createPendingResult(requestCode: Int, data: Intent, flags: Int): PendingIntent {
+        return super.createPendingResult(requestCode, data, flags)
+    }
+
+    override fun closeContextMenu() {
+        super.closeContextMenu()
+    }
+
     fun enterDeposit(view: View) {
         for (i in 0..8) {
             var bal: Int = 0
@@ -252,29 +265,80 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     }
 
     private fun Quit(no: Int) {
-        var hnds: Int = getHandsNo()
-
-        for (i in no until getHandsNo() - 1) {
-            names[i].text = names[i + 1].text.toString()
-            balences[i].text = balences[i + 1].text.toString()
-            nameNo--
+        val sharedPref: SharedPreferences =
+            getSharedPreferences(PREF_NAME, PRIVATE_MODE)
+        val editor =sharedPref.edit()
+        if(sharedPref.contains(names[no].text.toString())){
+            editor.remove(names[no].text.toString()).apply()
         }
-        names[getHandsNo() - 1].text = ""
-        balences[getHandsNo() - 1].text = ""
-    }
-
-    fun rejoin(no: Int) {
-        nameBalence[blNo][0] = names[no].text.toString()
-        nameBalence[blNo][1] = balences[no].text.toString()
         var hnds: Int = getHandsNo()
+        val builder: AlertDialog.Builder = AlertDialog.Builder(this)
+        builder.setTitle("Pay Back")
+        builder.setMessage("Pay back ${balences[no].text.toString()}\n     to ${names[no].text.toString()}")
+        builder.setPositiveButton("OK", null)
+        var dialog: AlertDialog = builder.create()
+        dialog.show()
+        dialog.window?.setLayout(600, 500)
+
+        dialog.window?.setGravity(1000)
+      //  Toast.makeText(this,"Pay back ${balences[no].text} to ${names[no].text}",Toast.LENGTH_LONG).show()
         for (i in no until hnds) {
             names[i].text = names[i + 1].text.toString()
             balences[i].text = balences[i + 1].text.toString()
+            jpotArray[i]=jpotArray[i + 1]
+            jackpots[i].isChecked =jackpots[i + 1].isChecked
             nameNo--
-            blNo++
+          //  gameNo--
+            slNos[hnds - 1].isEnabled=false
         }
-        names[getHandsNo() - 1].text = ""
-        balences[getHandsNo() - 1].text = ""
+        names[hnds].text = ""
+        balences[hnds].text = ""
+        points[hnds - 1].isEnabled=false
+        deposits[hnds - 1].isEnabled=false
+        names[gameNo].setTextColor(resources.getColor(R.color.colorBlack))
+        gameNo--
+        nameNo--
+        blNo++
+        names[gameNo].setTextColor(resources.getColor(R.color.colorAccent))
+
+
+    }
+
+    fun rejoin(no: Int) {
+        val sharedPref: SharedPreferences =
+            getSharedPreferences(PREF_NAME, PRIVATE_MODE)
+        val editor =sharedPref.edit()
+        editor.putString(
+            names[no].text.toString(),
+            balences[no].text.toString()
+        ).apply()
+        nameBalence[blNo][0] = names[no].text.toString()
+        nameBalence[blNo][1] = balences[no].text.toString()
+        var hnds: Int = getHandsNo()
+        Toast.makeText(
+            this,
+            " ${balences[no].text} of ${names[no].text} sent to memory",
+            Toast.LENGTH_LONG
+        ).show()
+        for (i in no until hnds) {
+            names[i].text = names[i + 1].text.toString()
+            balences[i].text = balences[i + 1].text.toString()
+            jpotArray[i]=jpotArray[i + 1]
+            jackpots[i].isChecked =jackpots[i + 1].isChecked
+            nameNo--
+            //  gameNo--
+            slNos[hnds - 1].isEnabled=false
+        }
+        names[hnds].text = ""
+        balences[hnds].text = ""
+        points[hnds - 1].isEnabled=false
+        deposits[hnds - 1].isEnabled=false
+        names[gameNo].setTextColor(resources.getColor(R.color.colorBlack))
+        gameNo--
+        nameNo--
+        blNo++
+        names[gameNo].setTextColor(resources.getColor(R.color.colorAccent))
+
     }
 
     private fun getHandsNo(): Int {
@@ -374,18 +438,12 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         val intent = Intent(this, Settings::class.java)
         startActivity(intent)
     }
-
-    //     fun gotoSettings(view: View) {
-//        val intent = Intent(this, Settings::class.java)
-//        startActivity(intent)
-//    }
     fun getBalNo(): Int {
         var no: Int = 0
         for (i in 0..8)
             if (!balences[i].text.isEmpty()) no++
         return no
     }
-
     private fun fillArrayList() {
         arrayList.clear()
         arrayList.add("")
@@ -402,7 +460,6 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             }
         }
     }
-
     private fun fillNewHands() {
         fillArrayList()
         val namesAdapter = ArrayAdapter(
@@ -420,9 +477,13 @@ class MainActivity() : AppCompatActivity(), Parcelable {
                 if (nameNo == 9) return
                 var hand: String = parent?.getItemAtPosition(position).toString()
                 if (!isAlreadySelected(hand)) {
-                    names[nameNo].text = hand
-                    balences[nameNo].text = getBalance(hand)
-                    nameNo++
+                    if(roundOn)insertName(hand)
+                    else {
+                        names[nameNo].text = hand
+                        balences[nameNo].text = getBalance(hand)
+                       slNos[nameNo].isEnabled=true
+                        nameNo++
+                    }
                 }
             }
 
@@ -443,9 +504,12 @@ class MainActivity() : AppCompatActivity(), Parcelable {
 
     fun getBalance(name: String): String {
         var bal = ""
-        for (i in 0 until nameBalence.size) {
-            if (name == nameBalence[i][0]) bal = nameBalence[i][1]
-        }
+        var sharedPref: SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
+        val editor = sharedPref.edit()
+        if(sharedPref.contains(name)) bal=sharedPref.getString(name, "defvalue").toString()
+//        for (i in nameBalence.indices) {
+//            if (name == nameBalence[i][0]) bal = nameBalence[i][1]
+//        }
         return bal
     }
 
@@ -485,10 +549,10 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         jpotArray[0] = 2
         jpotArray[getHandsNo() - 1] = 2
         jackpots[0].isChecked=true
-        jackpots[getHandsNo()-1].isChecked=true
+        jackpots[getHandsNo() - 1].isChecked=true
     }
 
-    fun arrange() {
+   private  fun arrange() {
         for (i in 0 until getHandsNo()) {
             var no: Int = slNos[i].text.toString().toInt()
             if (no == getHandsNo()) {
@@ -502,8 +566,12 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         for (i in 0 until getHandsNo()) {
             names[i].text = arrangeName[i]
             this.balences[i].text = arrangeBal[i]
+            points[i].isEnabled=true
+            deposits[i].isEnabled=true
         }
         gameNo =0
+        winners[0].isChecked=true
+        points[0].isEnabled=false
         names[this.gameNo].setTextColor(resources.getColor(R.color.colorAccent))
         for (i in 0..8) slNos[i].text.clear()
         roundOn =true
@@ -530,6 +598,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     }
 
     fun arrangeHands(view: View) {
+
         if (!isValidSlnos())Toast.makeText(this, "check Entries in SlNos", LENGTH_LONG)
             .show()
 
@@ -542,19 +611,26 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     }
 
     fun caliculatePoints(view: View) {
+   //     depositsEnter()
+        if(! isAllPointsEntered()){
+            val customPositionToast =
+                Toast.makeText(
+                    applicationContext,
+                    "enter points to all\n except winner",
+                    LENGTH_SHORT
+                )
+            customPositionToast.setGravity(Gravity.TOP, 100, 1000)
 
-//        if (gameNo == getHandsNo()) {
-//            Toast.makeText(
-//                this, "Round is Over!Start New Round",
-//                Toast.LENGTH_LONG)
-//            return
-//        }
+            customPositionToast.show()
+            return
+        }
+
         if (gameNo == getHandsNo()) {
             val customPositionToast =
                 Toast.makeText(
                     applicationContext,
                     "End of this Round. Start a new Round",
-                    Toast.LENGTH_SHORT
+                    LENGTH_SHORT
                 )
             customPositionToast.setGravity(Gravity.TOP, 100, 100)
 
@@ -562,17 +638,19 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             return
         }
 
-        var winBal: Int = balences[Winner].text.toString().toInt()
+        var winBal: Int = if(balences[Winner].text.isEmpty()){0}
+        else{ balences[Winner].text.toString().toInt()}
+
         for (i in 0 until getHandsNo()) {
             if (i != Winner) {
 
-                var loss: Int
                 /* var bal: Int */
                 var pts = points[i].text.toString().toInt()
                 var stk: Double = stake!!.toDouble()
                 var jpt: Int = jpotArray[gameNo]
-                var bal = balences[i].text.toString().toInt()
-                loss = (stk * jpt * pts + 0.5).toInt()
+                var bal = if(balences[i].text.isEmpty()){0}
+                   else{ balences[i].text.toString().toInt()}
+                var loss = (stk * jpt * pts + 0.5).toInt()
                 winBal += loss
                 bal -= loss
                 if (!deposits[i].text.isEmpty()) {
@@ -580,32 +658,51 @@ class MainActivity() : AppCompatActivity(), Parcelable {
                 }
                 balences[i].text =
                     bal.toString()
+                points[i].text.clear()
+                deposits[i].text.clear()
             }
-
+        }
+            if (!deposits[Winner].text.isEmpty()) {
+                winBal += deposits[Winner].text.toString().toInt()
+            }
 
             balences[Winner].text = winBal.toString()
-            names[gameNo].setTextColor(resources.getColor(R.color.colorBlack))
-            gameNo++
-            if (gameNo != getHandsNo())
-                names[this.gameNo].setTextColor(resources.getColor(R.color.colorAccent))
-            else {
-                Toast.makeText(this, "Round Over! Start new Round", Toast.LENGTH_LONG).show()
+
+            winners[Winner].isChecked = false
+            deposits[Winner].text.clear()
+            points[Winner].isEnabled=true
+
+
+        names[gameNo].setTextColor(resources.getColor(R.color.colorBlack))
+        gameNo++
+        if(gameNo==getHandsNo()) {
+            Toast.makeText(this, "Round is over Start new Round", Toast.LENGTH_LONG).show()
+            for(i in 0 until getHandsNo()){
+                points[i].isEnabled = false
+                deposits[i].isEnabled=false
+                slNos[i].isEnabled=true
+
             }
-            points[i].text.clear()
-            winners[i].isChecked = false
         }
+        else
+        names[gameNo].setTextColor(resources.getColor(R.color.colorAccent))
     }
 
 
     fun enterDeposits(view: View) {
+        var netBal: Int =0
         for (i in 0 until getHandsNo()) {
+            var bal = balences[i].text.toString().toInt()
             if (!deposits[i].text.isEmpty()) {
-                var netBal: Int =
-                    deposits[i].text.toString().toInt() + balences[i].text.toString().toInt()
-                balences[i].text = netBal.toString()
+                 netBal = deposits[i].text.toString().toInt() + bal
+
+               { netBal = bal }
+
             }
+            balences[i].text=netBal.toString()
         }
     }
+
 
     private fun currentSettings() {
         val builder: AlertDialog.Builder = AlertDialog.Builder(this)
@@ -614,21 +711,33 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         builder.setPositiveButton("OK", null)
         var dialog: AlertDialog = builder.create()
         dialog.show()
-        dialog.window?.setLayout(1000, 800)
+        dialog.window?.setLayout(500, 400)
 
         dialog.window?.setGravity(1000)
 
     }
     fun defaultSettings(){
+        val sharedPref: SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
         val builder: AlertDialog.Builder = AlertDialog.Builder(this)
         builder.setTitle("Default Settings")
-        val sharedPref:SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
-        builder.setMessage("Stake:      ${sharedPref.getString(getString(R.string.stakes_key), "defvalue")}" +
-                "\nJackpots: ${sharedPref.getString(getString(R.string.jackpot_key), "defvalue")}")
-        builder.setPositiveButton("OK",null)
+        builder.setMessage(
+            "Stake:   ${
+                sharedPref.getString(
+                    getString(R.string.stakes_key),
+                    "defValue"
+                )
+            }" +
+                    "\nJackpots: ${
+                        sharedPref.getString(
+                            getString(R.string.jackpot_key),
+                            "devValue"
+                        )
+                    }"
+        )
+        builder.setPositiveButton("OK", null)
         var dialog: AlertDialog = builder.create()
         dialog.show()
-        dialog.window?.setLayout(1000, 800)
+        dialog.window?.setLayout(600, 500)
 
         dialog.window?.setGravity(1000)
 
@@ -650,19 +759,65 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             }
         }
     }
-
-    fun newRound(view: View) {
-        for (i in 0..8) {
-            slNos[i].isEnabled = true
-            jackpots[i].isChecked = false
-            winners[i].isChecked = false
-            names[i].setTextColor(resources.getColor(R.color.colorBlack))
+    private fun insertName(name: String) {
+        for (i in getHandsNo()downTo gameNo-1) {
+            names[i].text = names[i - 1].text
+            balences[i].text = balences[i - 1].text
+            jackpots[i].isChecked=jackpots[i - 1].isChecked
+            names[i].setTextColor(names[i - 1].textColors)
+            jpotArray[i]=jpotArray[i - 1]
         }
-
-
-
+        names[gameNo].text = name
+        names[gameNo].setTextColor(resources.getColor(R.color.colorBlack))
+        balences[gameNo].text = getBalance(name)
+        jackpots[gameNo].isChecked=false
+        gameNo++
+        slNos[getHandsNo() - 1].isEnabled=true
+        winners[0].isChecked=true
+        slNos[0].isEnabled=false
     }
-
+    fun isAllPointsEntered():Boolean{
+        var entered:Boolean = true
+        for(i in 0 until getHandsNo()){
+            if(i !=Winner){
+                if(points[i].text.isEmpty())
+                 entered = false
+            }
+        }
+        return entered
+    }
+    fun onClickDeal(view: View){
+        for(i in 0..8){
+            if(jackpots[i].isChecked){
+                jpotArray[i]=2
+            }
+            else jpotArray[i]=1
+        }
+    }
+    fun disableEditTexts(){
+        for(i in 0..8){
+            slNos[i].isEnabled=false
+            points[i].isEnabled=false
+            deposits[i].isEnabled=false
+        }
+    }
+    fun winnerMarked():Boolean{
+        var marked = true
+        for (i in 0 until getHandsNo()){
+            if(!winners[i].isChecked)
+                marked= false
+        }
+        return marked
+    }
+    fun saveBalances(view: View){
+        var sharedPref: SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
+        val editor = sharedPref.edit()
+        for(i in 0 until getHandsNo()){
+        editor.putString(names[i].text.toString(), balences[i].text.toString())
+            names[i].text =""
+            balences[i].text=""
+        }
+    }
 
 }//class
 

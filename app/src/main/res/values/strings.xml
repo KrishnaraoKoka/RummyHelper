@@ -15,5 +15,6 @@
     <string name="new_name">nextname</string>
     <string name="jackpot_key">jackpot key</string>
     <string name="stakes_key">stakes</string>
+    <string name="abort">Abort</string>
 
 </resources>

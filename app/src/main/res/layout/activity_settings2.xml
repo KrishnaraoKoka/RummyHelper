@@ -56,7 +56,7 @@
         app:layout_constraintRight_toRightOf="@id/txtSelectStakes"
         app:layout_constraintTop_toBottomOf="@id/txtSelectJackPots"
         android:layout_marginLeft="40dp"
-        android:dropDownSelector="@color/coloerRed"
+        android:dropDownSelector="@color/colorRed"
         />
     <Spinner
         android:layout_width="80dp"

@@ -86,6 +86,7 @@
         android:layout_height="40dp"
         app:layout_constraintLeft_toLeftOf="@id/txtSlno"
         app:layout_constraintTop_toBottomOf="@id/txtSlno"
+        android:gravity="center"
         android:inputType="number"
         android:maxLength="1"
         android:layout_marginRight="10dp"/>
@@ -106,7 +107,8 @@
         android:onClick="onClickDeal"
         app:layout_constraintLeft_toLeftOf="@id/txtDeal"
         app:layout_constraintTop_toBottomOf="@id/txtDeal"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        />
     <EditText
         android:id="@+id/edtDep1"
         android:layout_width="50dp"
@@ -115,7 +117,8 @@
         app:layout_constraintLeft_toLeftOf="@id/txtDep"
         android:inputType="number"
         android:maxLength="4"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        />
     <RadioButton
         android:id="@+id/rdo1"
         android:layout_width="30dp"
@@ -132,8 +135,8 @@
         app:layout_constraintLeft_toLeftOf="@id/txtPtsr"
         android:inputType="number"
         android:maxLength="2"
-        android:textSize="15sp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        />
     <TextView
         android:id="@+id/txtBal1"
         android:layout_width="50dp"
@@ -154,7 +157,8 @@
         app:layout_constraintTop_toBottomOf="@id/edtSl1"
         android:inputType="number"
         android:maxLength="1"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        />
     <TextView
         android:id="@+id/txtName2"
         android:layout_width="80dp"
@@ -164,7 +168,8 @@
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <CheckBox
         android:id="@+id/chk2"
         android:layout_width="30dp"
@@ -182,7 +187,8 @@
         app:layout_constraintLeft_toLeftOf="@id/edtDep1"
         android:maxLength="4"
         android:inputType="number"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        />
     <RadioButton
         android:id="@+id/rdo2"
         android:layout_width="30dp"
@@ -199,7 +205,9 @@
         app:layout_constraintLeft_toLeftOf="@id/edtPts1"
         android:inputType="number"
         android:maxLength="2"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <TextView
         android:id="@+id/txtBal2"
         android:layout_width="50dp"
@@ -218,7 +226,8 @@
         app:layout_constraintTop_toBottomOf="@id/edtSl2"
         android:inputType="number"
         android:maxLength="1"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        />
     <TextView
         android:id="@+id/txtName3"
         android:layout_width="80dp"
@@ -246,7 +255,8 @@
         app:layout_constraintLeft_toLeftOf="@id/edtDep2"
         android:inputType="number"
         android:maxLength="4"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        />
     <RadioButton
         android:id="@+id/rdo3"
         android:layout_width="30dp"
@@ -263,7 +273,8 @@
         app:layout_constraintLeft_toLeftOf="@id/edtPts2"
         android:inputType="number"
         android:maxLength="2"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+       />
     <TextView
         android:id="@+id/txtBal3"
         android:layout_width="50dp"
@@ -273,7 +284,8 @@
         android:layout_marginRight="10dp"
         android:paddingTop="10dp"
         android:textColor="@color/colorBlack"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        />
     <EditText
         android:id="@+id/edtSl4"
         android:layout_width="30dp"
@@ -282,7 +294,9 @@
         app:layout_constraintTop_toBottomOf="@id/edtSl3"
         android:inputType="number"
         android:maxLength="1"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+       />
     <TextView
         android:id="@+id/txtName4"
         android:layout_width="80dp"
@@ -300,7 +314,8 @@
         android:layout_height="40dp"
         app:layout_constraintLeft_toLeftOf="@id/chk3"
         app:layout_constraintTop_toBottomOf="@id/chk3"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
 
     <EditText
         android:id="@+id/edtDep4"
@@ -310,7 +325,8 @@
         app:layout_constraintLeft_toLeftOf="@id/edtDep3"
         android:inputType="number"
         android:maxLength="4"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        />
     <RadioButton
         android:id="@+id/rdo4"
         android:layout_width="30dp"
@@ -327,7 +343,9 @@
         app:layout_constraintLeft_toLeftOf="@id/edtPts3"
         android:inputType="number"
         android:maxLength="2"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <TextView
         android:id="@+id/txtBal4"
         android:layout_width="50dp"
@@ -346,7 +364,9 @@
         app:layout_constraintTop_toBottomOf="@id/edtSl4"
         android:inputType="number"
         android:maxLength="1"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <TextView
         android:id="@+id/txtName5"
         android:layout_width="80dp"
@@ -356,7 +376,8 @@
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <CheckBox
         android:id="@+id/chk5"
         android:onClick="onClickDeal"
@@ -374,7 +395,9 @@
         app:layout_constraintLeft_toLeftOf="@id/edtDep4"
         android:inputType="number"
         android:maxLength="4"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <RadioButton
         android:id="@+id/rdo5"
         android:layout_width="30dp"
@@ -391,7 +414,9 @@
         app:layout_constraintLeft_toLeftOf="@id/edtPts4"
         android:inputType="number"
         android:maxLength="2"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <TextView
         android:id="@+id/txtBal5"
         android:layout_width="50dp"
@@ -410,7 +435,9 @@
         app:layout_constraintTop_toBottomOf="@id/edtSl5"
         android:inputType="number"
         android:maxLength="1"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <TextView
         android:id="@+id/txtName6"
         android:layout_width="80dp"
@@ -420,7 +447,8 @@
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <CheckBox
         android:id="@+id/chk6"
         android:onClick="onClickDeal"
@@ -438,7 +466,8 @@
         app:layout_constraintLeft_toLeftOf="@id/edtDep5"
         android:inputType="number"
         android:maxLength="4"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <RadioButton
         android:id="@+id/rdo6"
         android:layout_width="30dp"
@@ -446,7 +475,8 @@
         app:layout_constraintTop_toBottomOf="@id/rdo5"
         app:layout_constraintLeft_toLeftOf="@id/rdo5"
         android:onClick="selectWinner"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <EditText
         android:id="@+id/edtPts6"
         android:layout_width="30dp"
@@ -454,7 +484,9 @@
         app:layout_constraintTop_toBottomOf="@id/edtPts5"
         app:layout_constraintLeft_toLeftOf="@id/edtPts5"
         android:inputType="number"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <TextView
         android:id="@+id/txtBal6"
         android:layout_width="50dp"
@@ -464,7 +496,8 @@
         android:layout_marginRight="10dp"
         android:paddingTop="10dp"
         android:textColor="@color/colorBlack"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:layout_marginEnd="10dp" />
     <EditText
         android:id="@+id/edtSl7"
         android:layout_width="30dp"
@@ -473,7 +506,9 @@
         app:layout_constraintTop_toBottomOf="@id/edtSl6"
         android:inputType="number"
         android:maxLength="1"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <TextView
         android:id="@+id/txtName7"
         android:layout_width="80dp"
@@ -483,7 +518,8 @@
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <CheckBox
         android:id="@+id/chk7"
         android:onClick="onClickDeal"
@@ -501,7 +537,9 @@
         app:layout_constraintLeft_toLeftOf="@id/edtDep6"
         android:inputType="number"
         android:maxLength="4"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <RadioButton
         android:id="@+id/rdo7"
         android:layout_width="30dp"
@@ -518,7 +556,9 @@
         app:layout_constraintLeft_toLeftOf="@id/edtPts6"
         android:inputType="number"
         android:maxLength="2"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <TextView
         android:id="@+id/txtBal7"
         android:layout_width="50dp"
@@ -537,7 +577,9 @@
         app:layout_constraintTop_toBottomOf="@id/edtSl7"
         android:inputType="number"
         android:maxLength="1"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <TextView
         android:id="@+id/txtName8"
         android:layout_width="80dp"
@@ -547,7 +589,8 @@
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <CheckBox
         android:id="@+id/chk8"
         android:onClick="onClickDeal"
@@ -555,7 +598,8 @@
         android:layout_height="40dp"
         app:layout_constraintLeft_toLeftOf="@id/chk7"
         app:layout_constraintTop_toBottomOf="@id/chk7"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
 
     <EditText
         android:id="@+id/edtDep8"
@@ -565,7 +609,8 @@
         app:layout_constraintLeft_toLeftOf="@id/edtDep7"
         android:inputType="number"
         android:maxLength="4"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <RadioButton
         android:id="@+id/rdo8"
         android:layout_width="30dp"
@@ -573,7 +618,8 @@
         app:layout_constraintTop_toBottomOf="@id/rdo7"
         app:layout_constraintLeft_toLeftOf="@id/rdo7"
         android:onClick="selectWinner"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <EditText
         android:id="@+id/edtPts8"
         android:layout_width="30dp"
@@ -582,7 +628,8 @@
         app:layout_constraintLeft_toLeftOf="@id/edtPts7"
         android:inputType="number"
         android:maxLength="2"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <TextView
         android:id="@+id/txtBal8"
         android:layout_width="50dp"
@@ -592,7 +639,8 @@
         android:layout_marginRight="10dp"
         android:paddingTop="10dp"
         android:textColor="@color/colorBlack"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:layout_marginEnd="10dp" />
     <EditText
         android:id="@+id/edtSl9"
         android:layout_width="30dp"
@@ -602,7 +650,9 @@
         android:layout_marginBottom="5dp"
         android:inputType="number"
         android:maxLength="1"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <TextView
         android:id="@+id/txtName9"
         android:layout_width="80dp"
@@ -613,7 +663,8 @@
         android:textColor="@color/colorBlack"
         android:layout_marginBottom="5dp"
         android:textSize="15sp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <CheckBox
         android:id="@+id/chk9"
         android:onClick="onClickDeal"
@@ -622,7 +673,8 @@
         app:layout_constraintLeft_toLeftOf="@id/chk8"
         app:layout_constraintTop_toBottomOf="@id/chk8"
         android:layout_marginBottom="5dp"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
 
     <EditText
         android:id="@+id/edtDep9"
@@ -633,7 +685,9 @@
         android:layout_marginBottom="5dp"
         android:inputType="number"
         android:maxLength="4"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <RadioButton
         android:id="@+id/rdo9"
         android:layout_width="30dp"
@@ -642,17 +696,20 @@
         app:layout_constraintLeft_toLeftOf="@id/rdo8"
         android:layout_marginBottom="5dp"
         android:onClick="selectWinner"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
     <EditText
         android:id="@+id/edtPts9"
         android:layout_width="30dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         app:layout_constraintTop_toBottomOf="@id/edtPts8"
         app:layout_constraintLeft_toLeftOf="@id/edtPts8"
         android:inputType="number"
         android:maxLength="2"
         android:layout_marginBottom="5dp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
     <TextView
         android:id="@+id/txtBal9"
         android:layout_width="50dp"
@@ -662,14 +719,15 @@
         android:layout_marginRight="10dp"
         android:paddingTop="10dp"
         android:textColor="@color/colorBlack"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:layout_marginEnd="10dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtArrange"
         app:layout_constraintLeft_toLeftOf="@id/edtSl9"
         app:layout_constraintTop_toBottomOf="@id/edtSl9"
-        android:textColor="@color/coloerRed"
+        android:textColor="@color/colorRed"
         android:onClick="arrangeHands"
         android:text="Arrange"/>
     <TextView
@@ -678,37 +736,38 @@
         android:id="@+id/txtSettings"
         app:layout_constraintLeft_toRightOf="@id/txtArrange"
         app:layout_constraintTop_toTopOf="@id/txtArrange"
-        android:textColor="@color/coloerRed"
+        android:textColor="@color/colorRed"
         android:layout_marginLeft="10dp"
         android:onClick="gotoSettings"
-        android:text="Settings"/>
+        android:text="Settings"
+        android:layout_marginStart="10dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtNewRnd"
         app:layout_constraintLeft_toRightOf="@id/txtSettings"
         app:layout_constraintTop_toTopOf="@id/txtSettings"
-        android:textColor="@color/coloerRed"
+        android:textColor="@color/colorRed"
         android:layout_marginLeft="10dp"
-        android:onClick="newRound"
-        android:text="NewRnd"/>
+        android:onClick=""
+        android:text="@string/abort"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtDefSts"
         app:layout_constraintLeft_toRightOf="@id/txtNewRnd"
         app:layout_constraintTop_toTopOf="@id/txtNewRnd"
-        android:textColor="@color/coloerRed"
+        android:textColor="@color/colorRed"
         android:layout_marginLeft="10dp"
-        android:onClick="enterDeposit"
-        android:text="Enter Dpts"/>
+        android:onClick="saveBalances"
+        android:text="Save Bals"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtDone"
         app:layout_constraintRight_toRightOf="@id/txtBal9"
         app:layout_constraintTop_toTopOf="@id/txtDefSts"
-        android:textColor="@color/coloerRed"
+        android:textColor="@color/colorRed"
         android:layout_marginLeft="10dp"
         android:visibility="visible"
         android:onClick="caliculatePoints"
