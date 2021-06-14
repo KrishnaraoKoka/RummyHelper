@@ -1,0 +1,461 @@
+12:33:11.773 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-Xmx1536m, -Dfile.encoding=windows-1252, -Duser.country=IN, -Duser.language=en, -Duser.variant]
+12:33:11.875 [DEBUG] [org.gradle.internal.nativeintegration.services.NativeServices] Native-platform posix files integration is not available. Continuing with fallback.
+12:33:12.055 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=ab53bd11-14d8-4a40-9bca-e70febcda87b,javaHome=C:\Program Files\Android\Android Studio1\jre,daemonRegistryDir=C:\Users\Admin\AndroidStudioProjects\MyRhelper\daemon,pid=668,idleTimeout=10800000,priority=NORMAL,daemonOpts=-Xmx1536m,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]
+12:33:12.780 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Software Loopback Interface 1
+12:33:12.786 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+12:33:12.787 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+12:33:12.787 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1
+12:33:12.793 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)
+12:33:12.798 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.800 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (SSTP)
+12:33:12.805 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.805 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft 6to4 Adapter
+12:33:12.810 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.810 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPPOE)
+12:33:12.815 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.815 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter
+12:33:12.820 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.821 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft IP-HTTPS Platform Adapter
+12:33:12.824 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.824 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Kernel Debug Network Adapter
+12:33:12.827 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.828 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)
+12:33:12.832 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.833 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2
+12:33:12.838 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.839 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #4
+12:33:12.843 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.844 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:24ac:d9b5:d626:2ca2%wlan2
+12:33:12.844 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPTP)
+12:33:12.848 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.849 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Bluetooth Device (Personal Area Network)
+12:33:12.854 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.854 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:d5bb:eba6:66dc:b61d%eth3
+12:33:12.855 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)
+12:33:12.858 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.859 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IKEv2)
+12:33:12.864 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.864 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #3
+12:33:12.868 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.869 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:7471:404c:6909:bac1%wlan3
+12:33:12.869 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Teredo Tunneling Adapter
+12:33:12.873 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.874 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros QCA9377 Wireless Network Adapter
+12:33:12.879 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.880 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.0.185
+12:33:12.880 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:599c:9ce4:ee24:7080%wlan4
+12:33:12.880 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller
+12:33:12.886 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.886 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:b57f:4fd:a3e8:8314%eth5
+12:33:12.887 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (L2TP)
+12:33:12.891 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.891 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+12:33:12.896 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.896 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+12:33:12.901 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.901 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+12:33:12.905 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.906 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros QCA9377 Wireless Network Adapter-WFP Native MAC Layer LightWeight Filter-0000
+12:33:12.933 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.933 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros QCA9377 Wireless Network Adapter-Virtual WiFi Filter Driver-0000
+12:33:12.936 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.936 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros QCA9377 Wireless Network Adapter-Native WiFi Filter Driver-0000
+12:33:12.940 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.940 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros QCA9377 Wireless Network Adapter-QoS Packet Scheduler-0000
+12:33:12.944 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.945 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros QCA9377 Wireless Network Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+12:33:12.948 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.948 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+12:33:12.951 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.951 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-QoS Packet Scheduler-0000
+12:33:12.954 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.954 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+12:33:12.957 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.957 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+12:33:12.961 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.961 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+12:33:12.965 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.965 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+12:33:12.969 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.969 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #3-WFP Native MAC Layer LightWeight Filter-0000
+12:33:12.975 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.976 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #3-Native WiFi Filter Driver-0000
+12:33:12.979 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.979 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #3-QoS Packet Scheduler-0000
+12:33:12.983 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.983 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #3-WFP 802.3 MAC Layer LightWeight Filter-0000
+12:33:12.988 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.989 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #4-WFP Native MAC Layer LightWeight Filter-0000
+12:33:12.993 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.994 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #4-Native WiFi Filter Driver-0000
+12:33:12.998 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:12.999 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #4-QoS Packet Scheduler-0000
+12:33:13.003 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:13.003 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #4-WFP 802.3 MAC Layer LightWeight Filter-0000
+12:33:13.008 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+12:33:13.011 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]].
+12:33:13.019 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Wed Jan 27 12:33:13 IST 2021, with address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:33:13.019 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:33:13.020 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=ab53bd11-14d8-4a40-9bca-e70febcda87b,javaHome=C:\Program Files\Android\Android Studio1\jre,daemonRegistryDir=C:\Users\Admin\AndroidStudioProjects\MyRhelper\daemon,pid=668,idleTimeout=10800000,priority=NORMAL,daemonOpts=-Xmx1536m,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]
+12:33:13.021 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]], context: DefaultDaemonContext[uid=ab53bd11-14d8-4a40-9bca-e70febcda87b,javaHome=C:\Program Files\Android\Android Studio1\jre,daemonRegistryDir=C:\Users\Admin\AndroidStudioProjects\MyRhelper\daemon,pid=668,idleTimeout=10800000,priority=NORMAL,daemonOpts=-Xmx1536m,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]
+12:33:13.038 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:33:13.046 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:33:13.074 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:33:13.075 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+12:33:13.080 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+12:33:13.112 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:59214 to /127.0.0.1:59213.
+12:33:13.128 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+12:33:13.182 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+12:33:13.182 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+12:33:13.326 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 17: received class org.gradle.launcher.daemon.protocol.Build
+12:33:13.327 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 17: Received non-IO message from client: Build{id=3c849421-9877-4d72-92d9-f5f20d810bdd, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}
+12:33:13.328 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=3c849421-9877-4d72-92d9-f5f20d810bdd, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}.
+12:33:13.329 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=3c849421-9877-4d72-92d9-f5f20d810bdd, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game} with connection: socket connection from /127.0.0.1:59213 to /127.0.0.1:59214.
+12:33:13.336 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=3c849421-9877-4d72-92d9-f5f20d810bdd, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59213 to /127.0.0.1:59214] after 0.0 minutes of idle
+12:33:13.336 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:33:13.336 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:33:13.338 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:33:13.338 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:33:13.342 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:33:13.342 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+12:33:13.344 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+12:33:13.345 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=3c849421-9877-4d72-92d9-f5f20d810bdd, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}. Dispatching build started information...
+12:33:13.345 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+12:33:13.368 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {USERDOMAIN_ROAMINGPROFILE=DESKTOP-3IHPNLK, LOCALAPPDATA=C:\Users\Admin\AppData\Local, PROCESSOR_LEVEL=6, USERDOMAIN=DESKTOP-3IHPNLK, LOGONSERVER=\\DESKTOP-3IHPNLK, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, OneDrive=C:\Users\Admin\OneDrive, APPDATA=C:\Users\Admin\AppData\Roaming, USERNAME=Admin, ProgramFiles(x86)=C:\Program Files (x86), CommonProgramFiles=C:\Program Files\Common Files, Path=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, OS=Windows_NT, COMPUTERNAME=DESKTOP-3IHPNLK, PROCESSOR_REVISION=4e03, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\WINDOWS\system32\cmd.exe, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\Admin, TEMP=C:\Users\Admin\AppData\Local\Temp, SystemRoot=C:\WINDOWS, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel, USERPROFILE=C:\Users\Admin, HOMEDRIVE=C:, TMP=C:\Users\Admin\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, NUMBER_OF_PROCESSORS=4, windir=C:\WINDOWS, =::=::\, IDEA_INITIAL_DIRECTORY=C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Android Studio}
+12:33:13.387 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+12:33:13.388 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 668). The daemon log file: C:\Users\Admin\AndroidStudioProjects\MyRhelper\daemon\5.6.4\daemon-668.out.log
+12:33:13.390 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 1.4 GB]
+12:33:13.418 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+12:33:13.419 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=ab53bd11-14d8-4a40-9bca-e70febcda87b,javaHome=C:\Program Files\Android\Android Studio1\jre,daemonRegistryDir=C:\Users\Admin\AndroidStudioProjects\MyRhelper\daemon,pid=668,idleTimeout=10800000,priority=NORMAL,daemonOpts=-Xmx1536m,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]
+thread 17: received class org.gradle.launcher.daemon.protocol.CloseInput
+WARNING: Configuration 'compile' is obsolete and has been replaced with 'implementation' and 'api'.
+It will be removed soon. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: Configuration 'androidTestCompile' is obsolete and has been replaced with 'androidTestImplementation'.
+It will be removed soon. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: Configuration 'testCompile' is obsolete and has been replaced with 'testImplementation'.
+It will be removed soon. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: The specified Android SDK Build Tools version (24.0.3) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.6.1.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '24.0.3'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml","position":{"startLine":4,"startColumn":4,"startOffset":217,"endLine":7,"endColumn":12,"endOffset":426}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml:5:5-8:13: AAPT: error: resource android:attr/colorError not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml","position":{"startLine":8,"startColumn":4,"startOffset":431,"endLine":11,"endColumn":12,"endOffset":652}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml:9:5-12:13: AAPT: error: resource android:attr/colorError not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml","position":{"startLine":12,"startColumn":4,"startOffset":657,"endLine":15,"endColumn":12,"endOffset":891}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml:13:5-16:13: AAPT: error: style attribute 'android:attr/keyboardNavigationCluster' not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v28\\values-v28.xml","position":{"startLine":4,"startColumn":4,"startOffset":217,"endLine":7,"endColumn":12,"endOffset":442}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v28\\values-v28.xml:5:5-8:13: AAPT: error: resource android:attr/dialogCornerRadius not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v28\\values-v28.xml","position":{"startLine":8,"startColumn":4,"startOffset":447,"endLine":11,"endColumn":12,"endOffset":684}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v28\\values-v28.xml:9:5-12:13: AAPT: error: resource android:attr/dialogCornerRadius not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml","position":{"startLine":56,"startColumn":4,"startOffset":3523,"endLine":87,"endColumn":24,"endOffset":5583}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontStyle not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml","position":{"startLine":56,"startColumn":4,"startOffset":3523,"endLine":87,"endColumn":24,"endOffset":5583}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml:57:5-88:25: AAPT: error: resource android:attr/font not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml","position":{"startLine":56,"startColumn":4,"startOffset":3523,"endLine":87,"endColumn":24,"endOffset":5583}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontWeight not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml","position":{"startLine":56,"startColumn":4,"startOffset":3523,"endLine":87,"endColumn":24,"endOffset":5583}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontVariationSettings not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml","position":{"startLine":56,"startColumn":4,"startOffset":3523,"endLine":87,"endColumn":24,"endOffset":5583}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml:57:5-88:25: AAPT: error: resource android:attr/ttcIndex not found.\n    ","tool":"AAPT"}
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugResources'.
+> A failure occurred while executing com.android.build.gradle.internal.tasks.Workers$ActionFacade
+   > Android resource linking failed
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\24c8333af3f2d43ff2b1c71d3d52d739\appcompat-1.0.0\res\values-v26\values-v26.xml:5:5-8:13: AAPT: error: resource android:attr/colorError not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\24c8333af3f2d43ff2b1c71d3d52d739\appcompat-1.0.0\res\values-v26\values-v26.xml:9:5-12:13: AAPT: error: resource android:attr/colorError not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\24c8333af3f2d43ff2b1c71d3d52d739\appcompat-1.0.0\res\values-v26\values-v26.xml:13:5-16:13: AAPT: error: style attribute 'android:attr/keyboardNavigationCluster' not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\24c8333af3f2d43ff2b1c71d3d52d739\appcompat-1.0.0\res\values-v28\values-v28.xml:5:5-8:13: AAPT: error: resource android:attr/dialogCornerRadius not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\24c8333af3f2d43ff2b1c71d3d52d739\appcompat-1.0.0\res\values-v28\values-v28.xml:9:5-12:13: AAPT: error: resource android:attr/dialogCornerRadius not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\45ca2b27b5a8d2aecb4ee89b6457658f\core-1.0.0\res\values\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontStyle not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\45ca2b27b5a8d2aecb4ee89b6457658f\core-1.0.0\res\values\values.xml:57:5-88:25: AAPT: error: resource android:attr/font not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\45ca2b27b5a8d2aecb4ee89b6457658f\core-1.0.0\res\values\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontWeight not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\45ca2b27b5a8d2aecb4ee89b6457658f\core-1.0.0\res\values\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontVariationSettings not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\45ca2b27b5a8d2aecb4ee89b6457658f\core-1.0.0\res\values\values.xml:57:5-88:25: AAPT: error: resource android:attr/ttcIndex not found.
+         
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 6m 27s
+9 actionable tasks: 4 executed, 5 up-to-date
+12:39:33.434 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+12:39:33.451 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+12:39:33.451 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=3c849421-9877-4d72-92d9-f5f20d810bdd, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59213 to /127.0.0.1:59214]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@f74120f with state Busy
+12:39:33.451 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=3c849421-9877-4d72-92d9-f5f20d810bdd, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59213 to /127.0.0.1:59214]
+12:39:33.451 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+12:39:33.452 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:39:33.452 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:39:33.454 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:39:33.455 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:39:33.468 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:39:33.473 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+12:39:33.473 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@9a28b65]
+12:39:33.474 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: dispatching class org.gradle.launcher.daemon.protocol.Success
+12:39:33.536 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=3c849421-9877-4d72-92d9-f5f20d810bdd, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}
+12:39:33.568 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 17: received class org.gradle.launcher.daemon.protocol.Finished
+12:39:33.568 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 17: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@6102bc1e
+12:39:33.569 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+12:39:33.569 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 17: received null
+12:39:33.570 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 17: Received end-of-input from client.
+12:39:33.586 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+12:39:33.587 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: stopping connection
+12:39:33.601 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: stopping connection
+12:39:33.661 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 2020691968}
+12:39:33.662 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 2020691968}
+12:39:33.662 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 418906112}
+12:39:38.659 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 2018652160}
+12:39:38.659 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 2018652160}
+12:39:38.659 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 418906112}
+12:39:43.194 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] DaemonExpirationPeriodicCheck running
+12:39:43.195 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:39:43.196 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:39:43.197 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:39:43.199 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:39:43.199 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:39:43.200 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:39:43.656 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 2041012224}
+12:39:43.657 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 2041012224}
+12:39:43.657 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 418906112}
+12:39:48.663 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 2041462784}
+12:39:48.663 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 2041462784}
+12:39:48.663 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 418906112}
+12:39:53.195 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] DaemonExpirationPeriodicCheck running
+12:39:53.201 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:39:53.202 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:39:53.203 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:39:53.205 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:39:53.205 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:39:53.206 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:39:53.208 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:39:53.208 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:39:53.209 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:39:53.658 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 2019135488}
+12:39:53.658 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 2019135488}
+12:39:53.658 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 418906112}
+12:39:56.420 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:62018 to /127.0.0.1:59213.
+12:39:56.460 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 79: received class org.gradle.launcher.daemon.protocol.Build
+12:39:56.460 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 79: Received non-IO message from client: Build{id=246d0c02-00dc-4ba2-bca7-49b76714380a, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}
+12:39:56.461 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=246d0c02-00dc-4ba2-bca7-49b76714380a, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}.
+12:39:56.461 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=246d0c02-00dc-4ba2-bca7-49b76714380a, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game} with connection: socket connection from /127.0.0.1:59213 to /127.0.0.1:62018.
+12:39:56.464 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=246d0c02-00dc-4ba2-bca7-49b76714380a, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59213 to /127.0.0.1:62018] after 0.0 minutes of idle
+12:39:56.464 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:39:56.464 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:39:56.466 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:39:56.489 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:39:56.518 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:39:56.520 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+12:39:56.520 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+12:39:56.520 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=246d0c02-00dc-4ba2-bca7-49b76714380a, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}. Dispatching build started information...
+12:39:56.521 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+12:39:56.524 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {USERDOMAIN_ROAMINGPROFILE=DESKTOP-3IHPNLK, LOCALAPPDATA=C:\Users\Admin\AppData\Local, PROCESSOR_LEVEL=6, USERDOMAIN=DESKTOP-3IHPNLK, LOGONSERVER=\\DESKTOP-3IHPNLK, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, OneDrive=C:\Users\Admin\OneDrive, APPDATA=C:\Users\Admin\AppData\Roaming, USERNAME=Admin, ProgramFiles(x86)=C:\Program Files (x86), CommonProgramFiles=C:\Program Files\Common Files, Path=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, DriverData=C:\Windows\System32\Drivers\DriverData, OS=Windows_NT, COMPUTERNAME=DESKTOP-3IHPNLK, PROCESSOR_REVISION=4e03, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\WINDOWS\system32\cmd.exe, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\Admin, TEMP=C:\Users\Admin\AppData\Local\Temp, SystemRoot=C:\WINDOWS, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel, USERPROFILE=C:\Users\Admin, HOMEDRIVE=C:, TMP=C:\Users\Admin\AppData\Local\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, NUMBER_OF_PROCESSORS=4, windir=C:\WINDOWS, =::=::\, IDEA_INITIAL_DIRECTORY=C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Android Studio}
+12:39:56.528 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 79: received class org.gradle.launcher.daemon.protocol.CloseInput
+12:39:56.528 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 79: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@3f477fb2
+12:39:56.537 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+12:39:56.537 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 668). The daemon log file: C:\Users\Admin\AndroidStudioProjects\MyRhelper\daemon\5.6.4\daemon-668.out.log
+12:39:56.538 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 2nd build in daemon [uptime: 6 mins 44.696 secs, performance: 100%]
+12:39:56.539 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+12:39:56.539 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=ab53bd11-14d8-4a40-9bca-e70febcda87b,javaHome=C:\Program Files\Android\Android Studio1\jre,daemonRegistryDir=C:\Users\Admin\AndroidStudioProjects\MyRhelper\daemon,pid=668,idleTimeout=10800000,priority=NORMAL,daemonOpts=-Xmx1536m,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]
+WARNING: Configuration 'compile' is obsolete and has been replaced with 'implementation' and 'api'.
+It will be removed soon. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: Configuration 'androidTestCompile' is obsolete and has been replaced with 'androidTestImplementation'.
+It will be removed soon. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: Configuration 'testCompile' is obsolete and has been replaced with 'testImplementation'.
+It will be removed soon. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: The specified Android SDK Build Tools version (24.0.3) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.6.1.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '24.0.3'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml","position":{"startLine":4,"startColumn":4,"startOffset":217,"endLine":7,"endColumn":12,"endOffset":426}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml:5:5-8:13: AAPT: error: resource android:attr/colorError not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml","position":{"startLine":8,"startColumn":4,"startOffset":431,"endLine":11,"endColumn":12,"endOffset":652}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml:9:5-12:13: AAPT: error: resource android:attr/colorError not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml","position":{"startLine":12,"startColumn":4,"startOffset":657,"endLine":15,"endColumn":12,"endOffset":891}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v26\\values-v26.xml:13:5-16:13: AAPT: error: style attribute 'android:attr/keyboardNavigationCluster' not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v28\\values-v28.xml","position":{"startLine":4,"startColumn":4,"startOffset":217,"endLine":7,"endColumn":12,"endOffset":442}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v28\\values-v28.xml:5:5-8:13: AAPT: error: resource android:attr/dialogCornerRadius not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v28\\values-v28.xml","position":{"startLine":8,"startColumn":4,"startOffset":447,"endLine":11,"endColumn":12,"endOffset":684}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\24c8333af3f2d43ff2b1c71d3d52d739\\appcompat-1.0.0\\res\\values-v28\\values-v28.xml:9:5-12:13: AAPT: error: resource android:attr/dialogCornerRadius not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml","position":{"startLine":56,"startColumn":4,"startOffset":3523,"endLine":87,"endColumn":24,"endOffset":5583}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontStyle not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml","position":{"startLine":56,"startColumn":4,"startOffset":3523,"endLine":87,"endColumn":24,"endOffset":5583}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml:57:5-88:25: AAPT: error: resource android:attr/font not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml","position":{"startLine":56,"startColumn":4,"startOffset":3523,"endLine":87,"endColumn":24,"endOffset":5583}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontWeight not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml","position":{"startLine":56,"startColumn":4,"startOffset":3523,"endLine":87,"endColumn":24,"endOffset":5583}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontVariationSettings not found.\n    ","tool":"AAPT"}
+AGPBI: {"kind":"error","text":"Android resource linking failed","sources":[{"file":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml","position":{"startLine":56,"startColumn":4,"startOffset":3523,"endLine":87,"endColumn":24,"endOffset":5583}}],"original":"C:\\Users\\Admin\\AndroidStudioProjects\\MyRhelper\\caches\\transforms-2\\files-2.1\\45ca2b27b5a8d2aecb4ee89b6457658f\\core-1.0.0\\res\\values\\values.xml:57:5-88:25: AAPT: error: resource android:attr/ttcIndex not found.\n    ","tool":"AAPT"}
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugResources'.
+> A failure occurred while executing com.android.build.gradle.internal.tasks.Workers$ActionFacade
+   > Android resource linking failed
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\24c8333af3f2d43ff2b1c71d3d52d739\appcompat-1.0.0\res\values-v26\values-v26.xml:5:5-8:13: AAPT: error: resource android:attr/colorError not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\24c8333af3f2d43ff2b1c71d3d52d739\appcompat-1.0.0\res\values-v26\values-v26.xml:9:5-12:13: AAPT: error: resource android:attr/colorError not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\24c8333af3f2d43ff2b1c71d3d52d739\appcompat-1.0.0\res\values-v26\values-v26.xml:13:5-16:13: AAPT: error: style attribute 'android:attr/keyboardNavigationCluster' not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\24c8333af3f2d43ff2b1c71d3d52d739\appcompat-1.0.0\res\values-v28\values-v28.xml:5:5-8:13: AAPT: error: resource android:attr/dialogCornerRadius not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\24c8333af3f2d43ff2b1c71d3d52d739\appcompat-1.0.0\res\values-v28\values-v28.xml:9:5-12:13: AAPT: error: resource android:attr/dialogCornerRadius not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\45ca2b27b5a8d2aecb4ee89b6457658f\core-1.0.0\res\values\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontStyle not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\45ca2b27b5a8d2aecb4ee89b6457658f\core-1.0.0\res\values\values.xml:57:5-88:25: AAPT: error: resource android:attr/font not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\45ca2b27b5a8d2aecb4ee89b6457658f\core-1.0.0\res\values\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontWeight not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\45ca2b27b5a8d2aecb4ee89b6457658f\core-1.0.0\res\values\values.xml:57:5-88:25: AAPT: error: resource android:attr/fontVariationSettings not found.
+         
+     C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2\files-2.1\45ca2b27b5a8d2aecb4ee89b6457658f\core-1.0.0\res\values\values.xml:57:5-88:25: AAPT: error: resource android:attr/ttcIndex not found.
+         
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 14s
+12 actionable tasks: 10 executed, 2 up-to-date
+12:40:11.322 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+12:40:11.339 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+12:40:11.339 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=246d0c02-00dc-4ba2-bca7-49b76714380a, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59213 to /127.0.0.1:62018]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@f74120f with state Busy
+12:40:11.340 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=246d0c02-00dc-4ba2-bca7-49b76714380a, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59213 to /127.0.0.1:62018]
+12:40:11.340 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+12:40:11.340 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:40:11.340 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:40:11.343 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:40:11.344 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:11.346 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:11.347 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@5fbef5ac]
+12:40:11.347 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+12:40:11.347 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: dispatching class org.gradle.launcher.daemon.protocol.Success
+12:40:11.359 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=246d0c02-00dc-4ba2-bca7-49b76714380a, currentDir=C:\Users\Admin\Downloads\Thambola_Game-20200703T035615Z-001\Thambola_Game}
+12:40:11.375 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 79: received class org.gradle.launcher.daemon.protocol.Finished
+12:40:11.376 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 79: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@7a45e63e
+12:40:11.376 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@7a45e63e
+12:40:11.377 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+12:40:11.381 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 79: received null
+12:40:11.381 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 79: Received end-of-input from client.
+12:40:11.382 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: stopping connection
+12:40:11.386 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: stopping connection
+12:40:13.195 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] DaemonExpirationPeriodicCheck running
+12:40:13.201 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:40:13.202 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:13.203 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:13.206 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:40:13.207 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:13.208 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:13.730 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 1907830784}
+12:40:13.749 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 1907830784}
+12:40:13.749 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 428343296}
+12:40:18.670 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 1898999808}
+12:40:18.670 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 1898999808}
+12:40:18.670 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 428343296}
+12:40:23.186 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] DaemonExpirationPeriodicCheck running
+12:40:23.187 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:40:23.188 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:23.188 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:23.189 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:40:23.190 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:23.190 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:23.191 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:40:23.192 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:23.192 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:23.664 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 1897848832}
+12:40:23.664 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 1897848832}
+12:40:23.664 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 428343296}
+12:40:28.665 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 1896689664}
+12:40:28.665 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 1896689664}
+12:40:28.665 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 428343296}
+12:40:33.192 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] DaemonExpirationPeriodicCheck running
+12:40:33.196 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:40:33.196 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:33.198 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:33.200 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:40:33.201 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:33.202 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:33.203 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:40:33.203 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:33.204 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:33.655 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 1884631040}
+12:40:33.655 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 1884631040}
+12:40:33.656 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 428343296}
+12:40:38.654 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 1884901376}
+12:40:38.654 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 1884901376}
+12:40:38.655 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 428343296}
+12:40:43.183 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] DaemonExpirationPeriodicCheck running
+12:40:43.184 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:40:43.185 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:43.186 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:43.187 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:40:43.188 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:43.189 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:43.190 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+12:40:43.191 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:43.191 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:43.662 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting OS memory status event {Total: 8450043904, Free: 1882705920}
+12:40:43.662 [DEBUG] [org.gradle.launcher.daemon.server.health.LowMemoryDaemonExpirationStrategy] Received memory status update: {Total: 8450043904, Free: 1882705920}
+12:40:43.662 [DEBUG] [org.gradle.process.internal.health.memory.MemoryManager] Emitting JVM memory status event {Maximum: 1431830528, Committed: 428343296}
+12:40:47.028 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:62039 to /127.0.0.1:59213.
+12:40:47.039 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 113: received class org.gradle.launcher.daemon.protocol.Stop
+12:40:47.040 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 113: Received non-IO message from client: Stop[id=27cec7fa-0c94-4c8e-ba6c-d865dc70a4a8]
+12:40:47.041 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Stop[id=27cec7fa-0c94-4c8e-ba6c-d865dc70a4a8].
+12:40:47.041 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Stop[id=27cec7fa-0c94-4c8e-ba6c-d865dc70a4a8] with connection: socket connection from /127.0.0.1:59213 to /127.0.0.1:62039.
+12:40:47.042 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Storing daemon stop event: stop command received
+12:40:47.047 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon stop event with timestamp 1611731447043
+12:40:47.049 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:40:47.050 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:47.053 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:47.053 [LIFECYCLE] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is stopping immediately stop command received
+12:40:47.054 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Marking daemon stopped due to stop command received. The daemon is running a build: false
+12:40:47.054 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon has stopped.
+12:40:47.054 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: dispatching class org.gradle.launcher.daemon.protocol.Success
+12:40:47.054 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+12:40:47.054 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+12:40:47.054 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 113: received class org.gradle.launcher.daemon.protocol.Finished
+12:40:47.055 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 113: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@1e34f831
+12:40:47.055 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+12:40:47.055 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 113: received null
+12:40:47.055 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 113: Received end-of-input from client.
+12:40:47.056 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:40:47.056 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:40:47.057 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Stop[id=27cec7fa-0c94-4c8e-ba6c-d865dc70a4a8]
+12:40:47.058 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: null
+12:40:47.058 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: stopping connection
+12:40:47.061 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 15: stopping connection
+12:40:47.065 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:40:47.065 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] The file lock is held by a different Gradle process. I was unable to read on which port the owner listens for lock access requests.
+12:40:47.065 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] The file lock is held by a different Gradle process. I was unable to read on which port the owner listens for lock access requests.
+12:40:47.066 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] The file lock is held by a different Gradle process. I was unable to read on which port the owner listens for lock access requests.
+12:40:47.097 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:47.098 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+12:40:47.099 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Address removed from registry.
+12:40:47.100 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for jars (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\jars-3)
+12:40:47.100 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on jars (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\jars-3).
+12:40:47.101 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] jars (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\jars-3) has last been fully cleaned up 0 hours ago
+12:40:47.108 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file content cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\5.6.4\fileContent)
+12:40:47.108 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file content cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\5.6.4\fileContent).
+12:40:47.110 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\5.6.4\fileHashes)
+12:40:47.110 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\5.6.4\fileHashes\fileHashes.bin)
+12:40:47.111 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resourceHashesCache.bin (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\5.6.4\fileHashes\resourceHashesCache.bin)
+12:40:47.111 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\5.6.4\fileHashes).
+12:40:47.113 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Generated Gradle JARs cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\5.6.4\generated-gradle-jars) was closed 0 times.
+12:40:47.113 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\modules-2)
+12:40:47.114 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifacts.bin (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\modules-2\metadata-2.71\module-artifacts.bin)
+12:40:47.114 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifact.bin (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\modules-2\metadata-2.71\module-artifact.bin)
+12:40:47.114 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resource-at-url.bin (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\modules-2\metadata-2.71\resource-at-url.bin)
+12:40:47.114 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\modules-2\metadata-2.71\module-metadata.bin)
+12:40:47.115 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\modules-2).
+12:40:47.116 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] artifact cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\modules-2) has last been fully cleaned up 0 hours ago
+12:40:47.116 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Artifact transforms cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2)
+12:40:47.116 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Artifact transforms cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2).
+12:40:47.118 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] Artifact transforms cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\transforms-2) has last been fully cleaned up 0 hours ago
+12:40:47.118 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for journal cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\journal-1)
+12:40:47.118 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache file-access.bin (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\journal-1\file-access.bin)
+12:40:47.119 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on journal cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\journal-1).
+12:40:47.121 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for execution history cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\5.6.4\executionHistory)
+12:40:47.121 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache executionHistory.bin (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\5.6.4\executionHistory\executionHistory.bin)
+12:40:47.122 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on execution history cache (C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches\5.6.4\executionHistory).
+12:40:47.146 [DEBUG] [org.gradle.cache.internal.VersionSpecificCacheCleanupAction] Processed version-specific caches at C:\Users\Admin\AndroidStudioProjects\MyRhelper\caches for cleanup in 0.001 secs
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+12:40:47.157 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [51c92b32-d29d-4e55-ad44-293d43d73cf6 port:59213, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]]
+12:40:47.158 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+12:40:47.159 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+12:40:47.162 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.

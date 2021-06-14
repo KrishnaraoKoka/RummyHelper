@@ -27,7 +27,7 @@ class Settings : AppCompatActivity() {
         fillArrayList()
        // arrayList.add("KGK")
         //fillNewHands()
-        var sharedPref: SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
+        var sharedPref: SharedPreferences =this.getSharedPreferences(PREF_NAME, PRIVATE_MODE)
         val editor = sharedPref.edit()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings2)
@@ -43,13 +43,8 @@ class Settings : AppCompatActivity() {
         val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, Stakes)
         spinner.adapter = arrayAdapter
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(
-                parent: AdapterView<*>,
-                view: View,
-                position: Int,
-                id: Long
-            ) {
-                stks  =Stakes[position]
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, p2: Int, id: Long) {
+                stks  =Stakes[p2]
                 if(stks!="Select") {
                     showStakes.text = stks
                     editor.putString(getString(R.string.stakes_key), stks).apply()
@@ -59,6 +54,10 @@ class Settings : AppCompatActivity() {
             override fun onNothingSelected(parent: AdapterView<*>) {
                 // Code to perform some action when nothing is selected
             }
+
+//            override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+//                TODO("Not yet implemented")
+//            }
         }
         val jparrayAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, jackPots)
         jackpotSpinner.adapter = jparrayAdapter
@@ -106,7 +105,6 @@ class Settings : AppCompatActivity() {
          }
         }
     }
-
     private fun fillNewHands() {
 
          fillArrayList()
@@ -128,7 +126,12 @@ class Settings : AppCompatActivity() {
         fillNewHands()
         fillArrayList()
     }
-    fun selectName(){
+
+//    override fun getSharedPreferences(prefName: String, privateMode: Int): SharedPreferences {
+//
+//    }
+
+    private fun selectName(){
         spnDeleteNames.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>,

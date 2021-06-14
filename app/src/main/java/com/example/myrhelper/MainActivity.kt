@@ -1,3 +1,5 @@
+
+
 package com.example.myrhelper
 
 import android.app.PendingIntent
@@ -304,6 +306,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
 
     }
 
+
     fun rejoin(no: Int) {
         val sharedPref: SharedPreferences =
             getSharedPreferences(PREF_NAME, PRIVATE_MODE)
@@ -506,7 +509,9 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         var bal = ""
         var sharedPref: SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
         val editor = sharedPref.edit()
-        if(sharedPref.contains(name)) bal=sharedPref.getString(name, "defvalue").toString()
+        if(sharedPref.contains(name)) {bal=sharedPref.getString(name, "defvalue").toString()
+            editor.remove(name)
+        }
 //        for (i in nameBalence.indices) {
 //            if (name == nameBalence[i][0]) bal = nameBalence[i][1]
 //        }
