@@ -17,7 +17,10 @@ import android.widget.*
 import android.widget.Toast.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.text.isDigitsOnly
 import kotlinx.android.synthetic.main.activity_main.*
+
+
 
 
 class MainActivity() : AppCompatActivity(), Parcelable {
@@ -49,6 +52,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     var blNo: Int = 0
     var roundOn: Boolean = false
     var slNo =0
+    var msg = ""
    // var hNo =  getHandsNo()
 
     // val sharedPref: SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
@@ -63,7 +67,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         val sharedPref: SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
         val editor = sharedPref.edit()
         if (sharedPref.getInt("lastno", -1) == -1) {
-            editor.putInt("lastno", 0).commit()
+            editor.putInt("lastno", 0).apply()
         }
         findByids()
         disableEditTexts()
@@ -210,7 +214,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             }
     }
 
-    fun alertDialogBuild(no: Int) {
+    private fun alertDialogBuild(no: Int) {
         if (no>=gameNo) {
             Toast.makeText(
                 this, "You can't quit or re enter", Toast.LENGTH_LONG
@@ -232,7 +236,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         }
         builder.setNeutralButton("Quit")
         { dialog: DialogInterface?, which: Int ->
-            Quit(no)
+            quit(no)
 
         }
 
@@ -266,7 +270,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         }
     }
 
-    private fun Quit(no: Int) {
+    private fun quit(no: Int) {
         val sharedPref: SharedPreferences =
             getSharedPreferences(PREF_NAME, PRIVATE_MODE)
         val editor =sharedPref.edit()
@@ -352,12 +356,10 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     }
 
     fun onLongclicked(no: Int) {
-        for (i in no until getHandsNo()) {
-            makeText(baseContext, "${names[no].text} long Clicked", LENGTH_SHORT).show()
-        }
+        for (i in no until getHandsNo()) makeText(baseContext, "${names[no].text} long Clicked", LENGTH_SHORT).show()
     }
 
-    public fun findByids() {
+    private fun findByids() {
         names = arrayListOf(
             findViewById(R.id.txtName1),
             findViewById(R.id.txtName2),
@@ -508,9 +510,9 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     fun getBalance(name: String): String {
         var bal = ""
         var sharedPref: SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
-        val editor = sharedPref.edit()
-        if(sharedPref.contains(name)) {bal=sharedPref.getString(name, "defvalue").toString()
-            editor.remove(name)
+    if(sharedPref.contains(name)) {bal=sharedPref.getString(name, "defvalue").toString()
+            val editor:SharedPreferences.Editor = sharedPref.edit()
+
         }
 //        for (i in nameBalence.indices) {
 //            if (name == nameBalence[i][0]) bal = nameBalence[i][1]
@@ -519,11 +521,11 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     }
 
     fun setJackpots() {
-        when (jackpot) {
-            "All" -> allJpots()
-            "None" -> noneJpots()
-            "Alternate" -> alternateJpots()
-            "First&Last" -> firstandLast()
+        when {
+            jackpot == "All" -> allJpots()
+            jackpot == "None" -> noneJpots()
+            jackpot == "Alternate" -> alternateJpots()
+            jackpot == "First&Last" -> firstandLast()
         }
     }
 
@@ -583,35 +585,43 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     }
 
     fun isValidSlnos(): Boolean {
-        var ok: Boolean = true
+       // var ok: Boolean = true
+        var n  = 0
+        var ok:Boolean = true
         for (i in 0 until getHandsNo())
-            if (slNos[i].text.isEmpty()) ok = false
-        for (i in 1..getHandsNo()) {
-            var no = 0
-            for (j in 0 until getHandsNo()) {
-                if (slNos[j].text.toString().toInt() == i) no++
-            }
-            if (no > 1) ok = false
-        }
-        for (i in 0 until getHandsNo())
-            if (slNos[i].text.toString().toInt() > getHandsNo() || slNos[i].text.toString()
-                    .toInt() < 1
-            )
-                ok = false
-        return ok
+           if (slNos[i].text.toString().equals("")
+           ) {ok= false
+           msg = " Blank boxes"}
+            else if ((slNos[i].text.toString().toInt() > getHandsNo()) || (slNos[i].text.toString()
+                    .toInt() < 1)
+            )  {ok = false
+                msg = "Entry 0 or more than No of hands"        }
 
+        return ok
     }
 
+    fun hasNoDuplicateNos():Boolean{
+        var no =0
+        var ok:Boolean = true
+
+        for(i in 0 until  getHandsNo()-1){
+           no = slNos[i].text.toString().toInt()
+            for(j in i+1 until getHandsNo()){
+               if(slNos[j].text.toString().toInt()==no)
+               { ok = false
+               msg = "Duplicate Nos"}
+            }
+        }
+        return ok
+    }
     fun arrangeHands(view: View) {
 
-        if (!isValidSlnos())Toast.makeText(this, "check Entries in SlNos", LENGTH_LONG)
-            .show()
-
+        if (isValidSlnos() &&  hasNoDuplicateNos())
+        { arrange()
+        setJackpots()
+        gameNo = 0}
         else {
-            arrange()
-            setJackpots()
-            gameNo = 0
-
+            android.widget.Toast.makeText(this,"$msg" , Toast.LENGTH_LONG).show()
         }
     }
 
@@ -760,8 +770,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             builder.setNegativeButton("Cancel") { _, which ->
                 makeText(this, "no action", LENGTH_SHORT).show()
                 builder.create()
-                builder.show()
-            }
+                builder.show()        }
         }
     }
     private fun insertName(name: String) {
@@ -817,13 +826,12 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     fun saveBalances(view: View){
         var sharedPref: SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
         val editor = sharedPref.edit()
-        for(i in 0 until getHandsNo()){
-        editor.putString(names[i].text.toString(), balences[i].text.toString())
-            names[i].text =""
+        for (i in 0..getHandsNo()){
+            editor.putString(names[i].text.toString(),balences[i].text.toString())
+            names[i].text=""
             balences[i].text=""
         }
-    }
-
-}//class
+    }//class
+}
 
 

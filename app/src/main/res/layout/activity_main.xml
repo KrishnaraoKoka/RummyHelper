@@ -770,7 +770,7 @@
         android:textColor="@color/colorRed"
         android:layout_marginLeft="10dp"
         android:visibility="visible"
-        android:onClick="caliculatePoints"
+        android:onClick="calculatePoints"
         android:text="Done"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
