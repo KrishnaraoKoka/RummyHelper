@@ -139,6 +139,19 @@
         app:layout_constraintLeft_toLeftOf="@id/spnJackpots"
         app:layout_constraintTop_toBottomOf="@id/spnJackpots"/>
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@id/txtDelName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/pack_of_cards_resized"
+
+        android:background="@color/colorAccent"
+         />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,14 +27,23 @@
         android:layout_marginRight="10dp"
         android:textColor="@color/colorPrimary"
         android:text="SlNo" />
+    <ImageView
+        android:id="@+id/imgVw"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/txtSlno"
+        app:layout_constraintLeft_toRightOf="@+id/txtSlno"
+        android:src="@drawable/pack_of_cards_resized"
+        android:adjustViewBounds="true"/>
     <Spinner
         android:id="@+id/spn1"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        app:layout_constraintLeft_toRightOf="@id/txtSlno"
+        app:layout_constraintLeft_toRightOf="@id/imgVw"
         android:layout_marginRight="10dp"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintTop_toTopOf="@id/txtSlno" />
+        app:layout_constraintTop_toTopOf="@id/imgVw" />
+
     <TextView
         android:id="@+id/txtDeal"
         android:layout_width="30dp"
@@ -90,6 +99,15 @@
         android:inputType="number"
         android:maxLength="1"
         android:layout_marginRight="10dp"/>
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@+id/edtSl1"
+        android:src="@drawable/pack_of_cards_resized"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@id/edtSl1"/>
     <TextView
         android:id="@+id/txtName1"
         android:layout_width="80dp"
@@ -98,8 +116,8 @@
         android:paddingTop="5dp"
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
-        app:layout_constraintLeft_toLeftOf="@id/spn1"
-        app:layout_constraintTop_toBottomOf="@id/spn1" />
+        app:layout_constraintTop_toTopOf="@id/image1"
+        app:layout_constraintLeft_toRightOf="@id/image1" />
     <CheckBox
         android:id="@+id/chk1"
         android:layout_width="30dp"
@@ -157,14 +175,22 @@
         app:layout_constraintTop_toBottomOf="@id/edtSl1"
         android:inputType="number"
         android:maxLength="1"
-        android:layout_marginRight="10dp"
-        />
+        android:layout_marginRight="10dp" />
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@+id/edtSl2"
+        android:src="@drawable/pack_of_cards_resized"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@id/edtSl2"
+        android:visibility="invisible"/>
     <TextView
         android:id="@+id/txtName2"
         android:layout_width="80dp"
         android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="@id/txtName1"
-        app:layout_constraintTop_toBottomOf="@id/txtName1"
+        app:layout_constraintLeft_toRightOf="@id/image2"
+        app:layout_constraintTop_toTopOf="@id/image2"
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
@@ -226,18 +252,27 @@
         app:layout_constraintTop_toBottomOf="@id/edtSl2"
         android:inputType="number"
         android:maxLength="1"
-        android:layout_marginRight="10dp"
-        />
+        android:layout_marginRight="10dp" />
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@+id/edtSl3"
+        android:src="@drawable/pack_of_cards_resized"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@id/edtSl3"
+        android:visibility="invisible"/>
     <TextView
         android:id="@+id/txtName3"
         android:layout_width="80dp"
         android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="@id/txtName2"
-        app:layout_constraintTop_toBottomOf="@id/txtName2"
+        app:layout_constraintLeft_toRightOf="@+id/image3"
+        app:layout_constraintTop_toTopOf="@id/image3"
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        />
     <CheckBox
         android:id="@+id/chk3"
         android:onClick="onClickDeal"
@@ -295,14 +330,22 @@
         android:inputType="number"
         android:maxLength="1"
         android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-       />
+        android:layout_marginEnd="10dp" />
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@+id/edtSl4"
+        android:src="@drawable/pack_of_cards_resized"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@id/edtSl4"
+        android:visibility="invisible"/>
     <TextView
         android:id="@+id/txtName4"
         android:layout_width="80dp"
         android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="@id/txtName3"
-        app:layout_constraintTop_toBottomOf="@id/txtName3"
+        app:layout_constraintLeft_toRightOf="@id/image4"
+        app:layout_constraintTop_toTopOf="@id/image4"
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
@@ -365,14 +408,22 @@
         android:inputType="number"
         android:maxLength="1"
         android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-        />
+        android:layout_marginEnd="10dp" />
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@+id/edtSl5"
+        android:src="@drawable/pack_of_cards_resized"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@id/edtSl5"
+        android:visibility="invisible"/>
     <TextView
         android:id="@+id/txtName5"
         android:layout_width="80dp"
         android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="@id/txtName4"
-        app:layout_constraintTop_toBottomOf="@id/txtName4"
+        app:layout_constraintLeft_toRightOf="@id/image5"
+        app:layout_constraintTop_toTopOf="@id/image5"
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
@@ -436,14 +487,22 @@
         android:inputType="number"
         android:maxLength="1"
         android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-        />
+        android:layout_marginEnd="10dp" />
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@+id/edtSl6"
+        android:src="@drawable/pack_of_cards_resized"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@id/edtSl6"
+        android:visibility="invisible"/>
     <TextView
         android:id="@+id/txtName6"
         android:layout_width="80dp"
         android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="@id/txtName5"
-        app:layout_constraintTop_toBottomOf="@id/txtName5"
+        app:layout_constraintLeft_toRightOf="@id/image6"
+        app:layout_constraintTop_toTopOf="@id/image6"
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
@@ -507,14 +566,22 @@
         android:inputType="number"
         android:maxLength="1"
         android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-        />
+        android:layout_marginEnd="10dp" />
+    <ImageView
+        android:id="@+id/image7"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@+id/edtSl7"
+        android:src="@drawable/pack_of_cards_resized"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@id/edtSl7"
+        android:visibility="invisible"/>
     <TextView
         android:id="@+id/txtName7"
         android:layout_width="80dp"
         android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="@id/txtName6"
-        app:layout_constraintTop_toBottomOf="@id/txtName6"
+        app:layout_constraintLeft_toRightOf="@id/image7"
+        app:layout_constraintTop_toTopOf="@id/image7"
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
@@ -578,14 +645,22 @@
         android:inputType="number"
         android:maxLength="1"
         android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-        />
+        android:layout_marginEnd="10dp" />
+    <ImageView
+        android:id="@+id/image8"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@+id/edtSl8"
+        android:src="@drawable/pack_of_cards_resized"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@id/edtSl8"
+        android:visibility="invisible" />
     <TextView
         android:id="@+id/txtName8"
         android:layout_width="80dp"
         android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="@id/txtName7"
-        app:layout_constraintTop_toBottomOf="@id/txtName7"
+        app:layout_constraintLeft_toRightOf="@id/image8"
+        app:layout_constraintTop_toTopOf="@id/image8"
         android:text=""
         android:textColor="@color/colorBlack"
         android:textSize="15sp"
@@ -651,14 +726,22 @@
         android:inputType="number"
         android:maxLength="1"
         android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-        />
+        android:layout_marginEnd="10dp" />
+    <ImageView
+        android:id="@+id/image9"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="@+id/edtSl9"
+        android:src="@drawable/pack_of_cards_resized"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@id/edtSl9"
+        android:visibility="invisible"/>
     <TextView
         android:id="@+id/txtName9"
         android:layout_width="80dp"
         android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="@id/txtName8"
-        app:layout_constraintTop_toBottomOf="@id/txtName8"
+        app:layout_constraintLeft_toRightOf="@id/image9"
+        app:layout_constraintTop_toTopOf="@id/image9"
         android:text=""
         android:textColor="@color/colorBlack"
         android:layout_marginBottom="5dp"
@@ -701,7 +784,7 @@
     <EditText
         android:id="@+id/edtPts9"
         android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         app:layout_constraintTop_toBottomOf="@id/edtPts8"
         app:layout_constraintLeft_toLeftOf="@id/edtPts8"
         android:inputType="number"
@@ -770,7 +853,7 @@
         android:textColor="@color/colorRed"
         android:layout_marginLeft="10dp"
         android:visibility="visible"
-        android:onClick="calculatePoints"
+        android:onClick="caliculatePoints"
         android:text="Done"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

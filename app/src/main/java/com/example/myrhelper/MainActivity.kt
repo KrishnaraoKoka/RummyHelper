@@ -18,6 +18,8 @@ import android.widget.Toast.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.isDigitsOnly
+import androidx.core.view.isInvisible
+import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -34,6 +36,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     var winners: ArrayList<RadioButton> = arrayListOf()
     var points: ArrayList<EditText> = arrayListOf()
     var balences: ArrayList<TextView> = arrayListOf()
+    var images:ArrayList<ImageView> = arrayListOf()
     private var stake: String? = ""
     var jackpot: String? = ""
     var strNames: String? = ""
@@ -200,7 +203,6 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         }
     }
 
-
     public fun selectWinner(view: View) {
 
         for (i in 0 until getHandsNo())
@@ -306,19 +308,13 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         nameNo--
         blNo++
         names[gameNo].setTextColor(resources.getColor(R.color.colorAccent))
-
-
     }
-
-
     fun rejoin(no: Int) {
         val sharedPref: SharedPreferences =
             getSharedPreferences(PREF_NAME, PRIVATE_MODE)
         val editor =sharedPref.edit()
         editor.putString(
-            names[no].text.toString(),
-            balences[no].text.toString()
-        ).apply()
+            names[no].text.toString(), balences[no].text.toString()).apply()
         nameBalence[blNo][0] = names[no].text.toString()
         nameBalence[blNo][1] = balences[no].text.toString()
         var hnds: Int = getHandsNo()
@@ -437,6 +433,18 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             findViewById(R.id.txtBal8),
             findViewById(R.id.txtBal9)
         )
+        images = arrayListOf(
+            findViewById(R.id.image1),
+            findViewById(R.id.image2),
+            findViewById(R.id.image3),
+            findViewById(R.id.image4),
+            findViewById(R.id.image5),
+            findViewById(R.id.image6),
+            findViewById(R.id.image7),
+            findViewById(R.id.image8),
+            findViewById(R.id.image9)
+        )
+
     }
 
     fun gotoSettings(view: View) {
@@ -485,9 +493,13 @@ class MainActivity() : AppCompatActivity(), Parcelable {
                     if(roundOn)insertName(hand)
                     else {
                         names[nameNo].text = hand
+
                         balences[nameNo].text = getBalance(hand)
+                        deposits[nameNo].isEnabled = true
+                        points[nameNo].isEnabled =true
                        slNos[nameNo].isEnabled=true
                         nameNo++
+
                     }
                 }
             }
@@ -510,8 +522,9 @@ class MainActivity() : AppCompatActivity(), Parcelable {
     fun getBalance(name: String): String {
         var bal = ""
         var sharedPref: SharedPreferences = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
+        val editor:SharedPreferences.Editor = sharedPref.edit()
     if(sharedPref.contains(name)) {bal=sharedPref.getString(name, "defvalue").toString()
-            val editor:SharedPreferences.Editor = sharedPref.edit()
+           editor.remove(name).apply()
 
         }
 //        for (i in nameBalence.indices) {
@@ -551,6 +564,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
         }
     }
 
+
     private fun firstandLast() {
         noneJpots()
         jpotArray[0] = 2
@@ -565,7 +579,8 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             if (no == getHandsNo()) {
                 arrangeName[0] = names[i].text.toString()
                 arrangeBal[0] = balences[i].text.toString()
-            } else {
+            } else
+            {
                 arrangeName[no] = names[i].text.toString()
                 arrangeBal[no] = balences[i].text.toString()
             }
@@ -575,11 +590,12 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             this.balences[i].text = arrangeBal[i]
             points[i].isEnabled=true
             deposits[i].isEnabled=true
+
+
         }
         gameNo =0
-        winners[0].isChecked=true
-        points[0].isEnabled=false
-        names[this.gameNo].setTextColor(resources.getColor(R.color.colorAccent))
+       images[gameNo].visibility=View.VISIBLE
+      //  names[this.gameNo].setTextColor(resources.getColor(R.color.colorAccent))
         for (i in 0..8) slNos[i].text.clear()
         roundOn =true
     }
@@ -687,7 +703,7 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             deposits[Winner].text.clear()
             points[Winner].isEnabled=true
 
-
+        images[gameNo].visibility=View.INVISIBLE
         names[gameNo].setTextColor(resources.getColor(R.color.colorBlack))
         gameNo++
         if(gameNo==getHandsNo()) {
@@ -700,7 +716,9 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             }
         }
         else
-        names[gameNo].setTextColor(resources.getColor(R.color.colorAccent))
+      //  names[gameNo].setTextColor(resources.getColor(R.color.colorAccent))
+        images[gameNo].visibility=View.VISIBLE
+
     }
 
 
@@ -781,10 +799,13 @@ class MainActivity() : AppCompatActivity(), Parcelable {
             names[i].setTextColor(names[i - 1].textColors)
             jpotArray[i]=jpotArray[i - 1]
         }
+
         names[gameNo].text = name
         names[gameNo].setTextColor(resources.getColor(R.color.colorBlack))
         balences[gameNo].text = getBalance(name)
         jackpots[gameNo].isChecked=false
+        deposits[gameNo].isEnabled =true
+        points[gameNo].isEnabled =true
         gameNo++
         slNos[getHandsNo() - 1].isEnabled=true
         winners[0].isChecked=true
